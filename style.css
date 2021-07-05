@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Hammersmith One;
+    background-color: black;
+}
+
+/* Mobile nav section */
+
+.jj{
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    display: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* Desktop NAV SECTION */
+.bg-imag{
+    background-image: url("./image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    color: white !important;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.social-link{
+    margin: 30px;
+    font-size: 20px;
+}
+
+.fa-twitter, .fa-linkedin{
+    color: blue;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 13px;
+}
+
+.fa-github{ 
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 13px;  
+}
+
+.fa-instagram{
+    color: rgb(228, 101, 101);
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 13px;  
+}
+
+.nav-link{
+    color: white !important;
+    font-size: 24px;
+    margin: 18px;
+}
+
+.my-image{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.my-header{
+    color: rgb(29, 27, 27);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 17%;
+    text-transform: uppercase;
+}
+
+.my-para{
+    color: rgb(29, 27, 27);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-top: 2%;
+}
+
+.details-col{
+    margin-top: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nav{
+    margin: 0 auto;
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    width: 20%;
+    margin-bottom: 70px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.resume-btn{
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.btn-nav:hover{
+    color: white;
+    text-decoration: none !important;
+}
+
+
+
+/* SERVICE SECTION */
+#service{
+    margin-top: 7%;
+}
+
+/* .research, 
+.para-research, 
+.design, 
+.para-design, 
+.develop, 
+.para-develop, .about-col{
+    color: rgb(131, 122, 122);
+} */
+
+/* MY TOOLS */
+#my-tools{
+    margin-top: 10%;
+    border: soid;
+}
+
+/* ABOUT */
+#about{
+    margin-top: 10%;
+}
+
+.about-para1{
+    line-height: 30px;
+    margin-bottom: 7%;
+}
+
+/* CONTACT */
+#contact{
+    background: #EAFBFF;
+}
+
+
+.wrapper label{
+    display: block;
+    margin: 0.9em 0;
+}
+.wrapper label input{
+    font-size: 18px;
+    padding: 0.5em;
+    width: 82% !important;
+    background: #EAFBFF;
+    outline: none !important;
+}
+
+.wrapper input[type="submit"]{
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: gray;
+    color: rgb(223, 205, 163);
+    border: none;
+    margin-top: 7px;
+}
+
+.contact-head{
+    padding-top: 20%;
+    color: rgb(87, 74, 43);
+    animation: contac 8s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-iteration-count: infinite;
+    text-transform: capitalize;
+
+}
+
+#text{
+    background: #EAFBFF !important;
+    outline: none;
+}
+
+@keyframes contac {
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 20ch;
+    }
+}
+
+
+@media(max-width: 768px){
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+    }
+    
+    
+    .btn-nav{
+        margin: 0 auto;
+        display: block;
+        background-color: blue;
+        color: white;
+        padding: 7px;
+        width: 40%;
+        margin-bottom: 70px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 30px;
+    }
+    
+      
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        float: right;
+        position: relat=ive;
+        bottom: 20vh !important;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    
+    .jj{
+        display: block;
+    }
+}
+
+@media(max-width: 540px){
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+    }
+    
+    
+    .btn-nav{
+        margin: 0 auto;
+        display: block;
+        background-color: blue;
+        color: white;
+        padding: 7px;
+        width: 30%;
+        margin-bottom: 70px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 30px;
+    }
+    
+      
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        float: right;
+        position: relat=ive;
+        bottom: 20vh !important;
+    }
+
+    .my-header{
+        color: rgb(29, 27, 27);
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 17%;
+    }
+
+    
+.my-para{
+    color: rgb(29, 27, 27);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 2%;
+}
+    
+    .navbar{
+        display: none;
+    }
+    
+    .jj{
+        display: block;
+    }
+}
+
+@media(max-width: 520px){
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: block;
+}
+
+
+.btn-nav{
+    margin: 0 auto;
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    width: 30%;
+    margin-bottom: 70px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    display: block;
+    float: right;
+    position: relat=ive;
+    bottom: 20vh !important;
+}
+
+.navbar{
+    display: none;
+}
+
+.jj{
+    display: block;
+}
+}
+
+
+@media(max-width: 360px){
+    .bg-imag{
+        background-image: url("./image/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 130vh;
+        opacity: 0.8;
+    }
+}
+
+@media(max-width: 320px){
+    .bg-imag{
+        background-image: url("./image/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 130vh;
+        opacity: 0.8;
+    }
+
+    .my-header{
+        color: rgb(29, 27, 27);
+        text-align: center;
+        font-weight: bolder;
+        font-size: 24px;
+        margin-top: 17%;
+    }
+
+    
+.my-para{
+    color: rgb(29, 27, 27);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 2%;
+}
+}
+
+
+
+
